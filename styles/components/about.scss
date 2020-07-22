@@ -1,0 +1,12 @@
+.c-about {
+    background-color: $secondary-color;
+    border-bottom: 1px solid $border-color;
+
+    .c-about-wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        padding-bottom: 50px;
+        padding-top: 50px;
+        gap: 100px;
+    }
+}

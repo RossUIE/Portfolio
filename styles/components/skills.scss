@@ -1,0 +1,35 @@
+.c-skills {
+    background-color: $brand;
+    overflow: auto;
+    padding: rem(0 0 50 0);
+    &-content {
+        width: 100%;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        color: #293346;
+
+        .skills-column {
+            border: 1px solid $border-color;
+            width: 50%;
+            height: auto;
+            padding: rem(30);
+            box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8;
+            background: #fff;
+
+            ul {
+                list-style: outside;
+            }
+
+            h6 {
+                color: $brand-secondary;
+            }
+
+            img {
+                width: rem(70);
+                height: rem(70);
+            }
+        }
+    }
+}

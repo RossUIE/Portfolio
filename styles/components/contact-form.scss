@@ -1,0 +1,89 @@
+.c-contact-form {
+    padding: rem(80 20);
+    background-color: $brand;
+    &_title {
+        text-align: center;
+        margin-bottom: rem(50);
+
+        h2 {
+            color: $black;
+        }
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        &_content {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: rem(1200);
+            width: 100%;
+            margin: auto;
+            align-items: stretch;
+
+            .form-field {
+                display: flex;
+                flex-direction: column;
+                padding: rem(15 15 25 15);
+                border: 1px solid $border-color;
+
+            }
+            .c-personal {
+                width: 50%;
+                flex-grow: 1;
+                flex-basis: 300px;
+            }
+    
+            .c-message {
+                display: flex;
+                width: 50%;
+                position: relative;
+                flex: 1;
+                flex-grow: 1;
+                flex-basis: 300px;
+                border-radius: rem(0 8 8 0);
+    
+                .form-field {
+                    flex: 1;
+                }
+            }
+        }
+
+        &_handler {
+            margin: auto;
+            margin-top: rem(50);
+            .btn-submit {
+                border-color: $brand-secondary;
+                color: $brand-secondary;
+                margin: auto;
+    
+                &:hover {
+                    background: $brand-secondary;
+                    color: $white;
+                }
+            }
+        }
+        .form-success-message {
+            background-color: $success-green;
+            border: 1px solid $DarkGreen;
+            padding: rem(20);
+            max-width: rem(1300);
+            width: 100%;
+            border-radius: rem(8);
+            display: flex;
+            align-items: center;
+            margin: auto;
+            margin-bottom: rem(30);
+            display: none;
+           
+            svg {
+                max-width: rem(25);
+                width: 100%;
+                margin-right: rem(10);
+                fill: $DarkGreen;
+            }
+        }
+     
+    }
+}
